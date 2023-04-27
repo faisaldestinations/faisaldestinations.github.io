@@ -1,8 +1,8 @@
+/*  
 table {
     width: 900px;
     margin-left: 300px;
     background-color: antiquewhite;
-    /*border-spacing: 10px;*/ 
 }
 
 th {
@@ -26,7 +26,97 @@ caption {
     font-size: 30px;
     font-family:'Times New Roman', Times, serif;
     color: burlywood;
+}  */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 3px solid #000;
 }
 
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 3px solid #000;
+}
 
+tr:nth-child(even) {
+    background-color: antiquewhite;
+}
 
+caption {
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    color: burlywood;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+
+    .container,
+    .container-sm {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px
+    }
+}
+
+@media (min-width:1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px
+    }
+}
