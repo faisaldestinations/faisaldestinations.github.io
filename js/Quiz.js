@@ -1,10 +1,11 @@
 const Questions = [{
     id: 0,
     q: "What is capital city of Oman?",
-    a: [{ text: "gandhinagar", isCorrect: false },
-    { text: "Surat", isCorrect: false },
+    a: [{ text: "Matrah", isCorrect: false },
+    { text: "Salalah", isCorrect: false },
     { text: "Muscat", isCorrect: true },
-    { text: "mumbai", isCorrect: false }
+    { text: "Hail", isCorrect: false}
+    
     ]
 },
 {
@@ -27,7 +28,7 @@ const Questions = [{
 },
 {
     id: 3,
-    q: "How can you have a Mountain View in Hallstatt?",
+    q: "How can you get a Mountain View in Hallstatt?",
     a: [{ text: "Using a cable car", isCorrect: true },
     { text: "Using an air balloon", isCorrect: false },
     { text: "Using a funicular", isCorrect: false },
@@ -116,10 +117,10 @@ function iterate(id) {
 
     evaluate[0].addEventListener("click", () => {
         if (selected == "true") {
-            result[0].innerHTML = "True";
+            result[0].innerHTML = "Right";
             result[0].style.color = "green";
         } else {
-            result[0].innerHTML = "False";
+            result[0].innerHTML = "Wrong";
             result[0].style.color = "red";
         }
     })
@@ -142,3 +143,4 @@ next.addEventListener("click", () => {
 });
 
 /* Some of the code has been obtained from https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/#*/
+/* Additional questions have been added with exra coding and color has been changed*/
